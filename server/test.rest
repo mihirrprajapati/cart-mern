@@ -1,0 +1,46 @@
+GET http://localhost:3001/cart/
+Content-Type: application/json
+
+###
+
+POST http://localhost:3001/cart/add
+Content-Type: application/json
+
+{
+    "imgStr": "str",
+    "prodName": "Jeans",
+    "price": 900,
+    "qty": 3
+}
+
+###
+
+PATCH http://localhost:3001/cart/qty/670b7389f6c8990a66ed0d85
+Content-Type: application/json
+
+{
+    "qty": 15
+}
+
+###
+
+DELETE  http://localhost:3001/cart/remove/670b7389f6c8990a66ed0d85
+Content-Type: application/json
+
+
+###
+
+GET http://localhost:3001/item/
+Content-Type: application/json
+
+###
+
+POST http://localhost:3001/item/add
+Content-Type: application/json
+
+{
+    "imgStr": "str",
+    "prodName": "T-shirt",
+    "price": 400,
+    "qty": 20
+}
